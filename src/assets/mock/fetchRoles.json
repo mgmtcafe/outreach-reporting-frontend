@@ -1,0 +1,33 @@
+{
+    "responseCode": null,
+    "responseMessage": null,
+    "response": [
+        {
+            "status": null,
+            "createdDate": null,
+            "createdBy": null,
+            "modifiedDate": null,
+            "modifiedBy": null,
+            "roleId": 1,
+            "roleName": "ADMIN"
+        },
+        {
+            "status": null,
+            "createdDate": null,
+            "createdBy": null,
+            "modifiedDate": null,
+            "modifiedBy": null,
+            "roleId": 2,
+            "roleName": "PMO"
+        },
+        {
+            "status": null,
+            "createdDate": null,
+            "createdBy": null,
+            "modifiedDate": null,
+            "modifiedBy": null,
+            "roleId": 4,
+            "roleName": "POC"
+        }
+    ]
+}

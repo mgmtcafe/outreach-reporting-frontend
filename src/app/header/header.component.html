@@ -1,0 +1,64 @@
+<header>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar py-1">
+    <span class="navbar-brand"><strong>Outreach Reporting System</strong></span>
+    <button class="navbar-toggler" [ngClass]="{ 'collapsed': !navbarOpen }" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded='false'
+      aria-label="Toggle navigation" (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div *ngIf="isLoggedIn" class="collapse navbar-collapse" id="navbarSupportedContent"
+      [ngClass]="{ 'show': navbarOpen }">
+      <!-- <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a mdbWavesEffect type="button" class="nav-link px-3" href="javascript:void(0)" routerLink="/program"><span
+              class="sr-only">(current)</span>
+            Program Dashboard<span class="caret"></span></a>
+        </li>
+        <li class="nav-item dropdown" dropdown>
+          <a dropdownToggle mdbWavesEffect type="button" class="nav-link px-3 dropdown-toggle"><span
+              class="sr-only">(current)</span>
+            Risk<span class="caret"></span></a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+            <a class="dropdown-item waves-light" mdbWavesEffect href="javascript:void(0);"
+              routerLink='/risk'>Dashboard</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="javascript:void(0);"
+              routerLink='/risk/charts'>Charts</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="javascript:void(0);" routerLink='/risk/new'>Add
+              New Risk</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a mdbWavesEffect type="button" class="nav-link px-3" href="javascript:void(0)" routerLink="/cii"><span
+              class="sr-only">(current)</span>
+            CII<span class="caret"></span></a>
+        </li>
+        <li class="nav-item dropdown" dropdown>
+          <a dropdownToggle mdbWavesEffect type="button" class="nav-link px-3 dropdown-toggle"><span
+              class="sr-only">(current)</span>
+            Operation Dashboard<span class="caret"></span></a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+            <a class="dropdown-item waves-light" mdbWavesEffect href="javascript:void(0);"
+              routerLink='/operations'>Resource</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="javascript:void(0);"
+              routerLink='/operations'>Pipeline</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="javascript:void(0);"
+              routerLink='/operations'>Optimization</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="javascript:void(0);"
+              routerLink='/operations'>Visa</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="javascript:void(0);"
+              routerLink='/operations'>Training</a>
+          </div>
+        </li>
+      </ul> -->
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item dropdown" dropdown>
+          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+            {{name}} <i class="fa fa-user-circle" aria-hidden="true"></i></a>
+          <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+            <a class="dropdown-item" href="javascript:void(0);" (click)="logout()">Logout</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

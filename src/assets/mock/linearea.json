@@ -1,0 +1,227 @@
+[
+  {
+    "portfolioId": 1,
+    "portfolioName": "Channels",
+    "color": "#F7464A",
+    "yearlyRiskCount": [
+      {
+        "yearNumber": 2019,
+        "monthlyRiskCount": {
+          "riskCountByMonth": [
+            0,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "yearNumber": 2018,
+        "monthlyRiskCount": {
+          "riskCountByMonth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "portfolioId": 2,
+    "portfolioName": "CTO",
+    "color": "#46BFBD",
+    "yearlyRiskCount": [
+      {
+        "yearNumber": 2019,
+        "monthlyRiskCount": {
+          "riskCountByMonth": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "yearNumber": 2018,
+        "monthlyRiskCount": {
+          "riskCountByMonth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "portfolioId": 3,
+    "portfolioName": "Corp & Int'l Tech",
+    "color": "#FDB45C",
+    "yearlyRiskCount": [
+      {
+        "yearNumber": 2019,
+        "monthlyRiskCount": {
+          "riskCountByMonth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "yearNumber": 2018,
+        "monthlyRiskCount": {
+          "riskCountByMonth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "portfolioId": 4,
+    "portfolioName": "Operations Technology",
+    "color": "#ee41f4",
+    "yearlyRiskCount": [
+      {
+        "yearNumber": 2019,
+        "monthlyRiskCount": {
+          "riskCountByMonth": [
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "yearNumber": 2018,
+        "monthlyRiskCount": {
+          "riskCountByMonth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "portfolioId": 5,
+    "portfolioName": "All",
+    "color": "#949FB1",
+    "yearlyRiskCount": [
+      {
+        "yearNumber": 2019,
+        "monthlyRiskCount": {
+          "riskCountByMonth": [
+            13,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "yearNumber": 2018,
+        "monthlyRiskCount": {
+          "riskCountByMonth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ]
+  }
+]

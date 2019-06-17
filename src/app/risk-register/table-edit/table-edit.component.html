@@ -1,0 +1,17 @@
+<div mat-dialog-title class="m-0 p-2 dialog-font">
+    <div>Select Columns To Display</div>
+    <div class="text-danger">{{errorMessage}}</div>
+</div>
+<div mat-dialog-content>
+    <div class="p-0 dialog-font">
+        <mat-checkbox color="primary" [checked]="allChecked" value="all" (change)="getCheckedAllVal($event)">All</mat-checkbox>
+    </div>
+    <hr class="my-2">
+    <div class="p-0 dialog-font" *ngFor="let col of tableColumns">
+        <mat-checkbox color="primary" [checked]="col.selected" [value]="col.columnName" (change)="getCheckedVal($event)">{{col.displayName}}</mat-checkbox>
+    </div>
+</div>
+<div mat-dialog-actions class="m-0 p-0">
+    <button mdbBtn type="button" color="primary" class="btn-sm waves-light px-1 ml-auto" style="width:110px;" mdbWavesEffect
+        [mat-dialog-close]="tableColumns" cdkFocusInitial [disabled]="!submitAllowed">Ok</button>
+</div>

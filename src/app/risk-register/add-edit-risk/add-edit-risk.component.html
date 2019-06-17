@@ -1,0 +1,201 @@
+<div class="container-fluid animated fadeIn">
+  <div class="card rounded-0">
+    <mdb-card-header class="py-0">
+      <button mdbBtn type="button" color="info" size="sm" class="waves-light float-right" mdbWavesEffect routerLink="/risk">
+        back to risk dashboard
+      </button>
+    </mdb-card-header>
+    <mdb-card-body class="mx-auto p-0">
+      <div class="card risk-card border-0 p-0 shadow-none">
+        <form [formGroup]="riskForm">
+          <div class="form-row">
+            <div class="col-sm-3">
+              <mat-form-field>
+                <input matInput placeholder="Risk Number" formControlName="riskNumber">
+              </mat-form-field>
+            </div>
+            <div class="col-sm-3">
+              <mat-form-field>
+                <input matInput placeholder="Risk Sub Number" formControlName="riskSubNumber">
+              </mat-form-field>
+            </div>
+            <div class="col-sm-6">
+              <mat-form-field>
+                <input matInput placeholder="GDC Project Id" formControlName="gdcProjectId">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-sm-6">
+              <mat-form-field>
+                <textarea matInput placeholder="Risk Description" formControlName="riskDescription"></textarea>
+              </mat-form-field>
+            </div>
+            <div class="col-sm-6">
+              <mat-form-field>
+                <textarea matInput placeholder="Impact Description" formControlName="impactDescription"></textarea>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-sm-4">
+              <mat-form-field>
+                <mat-select placeholder="Portfolio" formControlName="portfolio">
+                  <mat-option value="1">Channels</mat-option>
+                  <mat-option value="2">CTO</mat-option>
+                  <mat-option value="3">Corp & Int'l Tech</mat-option>
+                  <mat-option value="4">Operations Technology</mat-option>
+                  <mat-option value="5">All</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-sm-4">
+              <mat-form-field>
+                <mat-select placeholder="Risk Category" formControlName="riskCategory">
+                  <mat-option value="1">Accept</mat-option>
+                  <mat-option value="2">Transfer</mat-option>
+                  <mat-option value="3">Mitigate</mat-option>
+                  <mat-option value="4">Ignore</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-sm-4">
+              <mat-form-field>
+                <mat-select placeholder="RAG Status" formControlName="ragStatus">
+                  <mat-option value="1">Open</mat-option>
+                  <mat-option value="2">Close</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-sm-6">
+              <mat-form-field>
+                <input matInput placeholder="Risk Domain" formControlName="riskDomain">
+              </mat-form-field>
+            </div>
+            <div class="col-sm-6">
+              <mat-form-field>
+                <input matInput placeholder="Sub Domain" formControlName="subDomain">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-sm-6">
+              <mat-form-field>
+                <input matInput placeholder="Risk Owner" formControlName="riskOwner">
+              </mat-form-field>
+            </div>
+            <div class="col-sm-6">
+              <mat-form-field>
+                <input matInput placeholder="Risk Owner Organization" formControlName="riskOwnerOrg">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-sm-3">
+              <mat-form-field>
+                <mat-select placeholder="Risk Status" formControlName="riskStatus">
+                  <mat-option value="1">Open</mat-option>
+                  <mat-option value="2">Close</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-sm-3">
+              <mat-form-field>
+                <mat-select placeholder="Risk Score" formControlName="score">
+                  <mat-option value="1">1</mat-option>
+                  <mat-option value="2">2</mat-option>
+                  <mat-option value="3">3</mat-option>
+                  <mat-option value="4">4</mat-option>
+                  <mat-option value="5">5</mat-option>
+                  <mat-option value="6">6</mat-option>
+                  <mat-option value="7">7</mat-option>
+                  <mat-option value="8">8</mat-option>
+                  <mat-option value="9">9</mat-option>
+                  <mat-option value="10">10</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-sm-3">
+              <mat-form-field>
+                <mat-select placeholder="Risk Impact" formControlName="impact">
+                  <mat-option value="H">H</mat-option>
+                  <mat-option value="M">M</mat-option>
+                  <mat-option value="L">L</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-sm-3">
+              <mat-form-field>
+                <mat-select placeholder="Risk Severity" formControlName="severity">
+                  <mat-option value="H">H</mat-option>
+                  <mat-option value="M">M</mat-option>
+                  <mat-option value="L">L</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-sm-6">
+              <mat-form-field>
+                <textarea matInput placeholder="Mitigation Plan" formControlName="mitigationPlan"></textarea>
+              </mat-form-field>
+            </div>
+            <div class="col-sm-6">
+              <mat-form-field>
+                <textarea matInput placeholder="Current Update" formControlName="currentUpdate"></textarea>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-sm-6">
+              <mat-form-field>
+                <input matInput [matDatepicker]="reportedOnDatePicker" placeholder="Reported On" formControlName="reportedOn">
+                <mat-datepicker-toggle matSuffix [for]="reportedOnDatePicker"></mat-datepicker-toggle>
+                <mat-datepicker touchUi="true" #reportedOnDatePicker></mat-datepicker>
+              </mat-form-field>
+            </div>
+            <div class="col-sm-6">
+              <mat-form-field>
+                <input matInput [matDatepicker]="targetCloseDatePicker" placeholder="Targer Closure Date" formControlName="targetCloseDate">
+                <mat-datepicker-toggle matSuffix [for]="targetCloseDatePicker"></mat-datepicker-toggle>
+                <mat-datepicker touchUi="true" #targetCloseDatePicker></mat-datepicker>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-sm-4">
+              <mat-form-field>
+                <mat-select placeholder="Classification" formControlName="classification">
+                  <mat-option value="1">Account</mat-option>
+                  <mat-option value="2">Portfolio/Program</mat-option>
+                  <mat-option value="3">Project</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-sm-4">
+              <mat-form-field>
+                <input matInput placeholder="TAR Reference" formControlName="tarReference">
+              </mat-form-field>
+            </div>
+            <div class="col-sm-4">
+              <mat-form-field>
+                <mat-select placeholder="Probability" formControlName="probability">
+                  <mat-option value="H">H</mat-option>
+                  <mat-option value="M">M</mat-option>
+                  <mat-option value="L">L</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <button mdbBtn type="button" color="indigo" class="waves-light float-right rounded-none" mdbWavesEffect (click)="submitRiskData()">submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </mdb-card-body>
+  </div>
+</div>

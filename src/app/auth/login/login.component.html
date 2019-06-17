@@ -1,0 +1,25 @@
+<form *ngIf="formReady" [formGroup]="loginForm">
+  <mdb-card class="mt-5">
+    <mdb-card-body>
+      <mdb-card-title class="text-center">
+        <h4>Login with Cognizant Credentials</h4>
+      </mdb-card-title>
+      <mdb-card-text class="text-danger my-4 text-center">{{errorMessage}}</mdb-card-text>
+      <div class="md-form md-outline">
+        <input type="text" id="associateId" class="form-control" mdbInput formControlName="associateId">
+        <label for="associateId">Associate Id</label>
+      </div>
+      <div class="md-form md-outline">
+        <input type="password" id="password" class="form-control" mdbInput formControlName="password">
+        <label for="password">Password</label>
+      </div>
+      <div class="md-form">
+        <select class="browser-default custom-select" formControlName="role">
+          <option *ngFor="let r of roleOptions" value="{{r}}">{{r}}</option>
+        </select>
+      </div>
+      <button mdbBtn type="submit" color="cyan" class="float-right" mdbWavesEffect (click)="validate()"
+        [disabled]="!loginForm.valid || submitDissabled">Login</button>
+    </mdb-card-body>
+  </mdb-card>
+</form>

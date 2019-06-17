@@ -1,0 +1,7 @@
+.cdk-overlay-container {
+    position: inherit;
+}
+
+button {
+    min-width: 75px;
+}

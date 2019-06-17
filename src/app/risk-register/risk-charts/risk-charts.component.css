@@ -1,0 +1,9 @@
+.text-small {
+  font-size: 0.8rem;
+}
+
+.indicator {
+    height:0px;
+    width: 40px;
+    border-top:10px solid;
+}

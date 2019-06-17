@@ -1,0 +1,42 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-md-6">
+      <div *ngIf="barChartDataReady" class="card">
+        <div class="text-center py-3">Portfolio wise risk</div>
+        <hr class="my-0 mx-3" />
+        <div class="card-body">
+          <canvas mdbChart [chartType]="barChartType" [datasets]="barChartDatasets" [labels]="barChartLabels" [colors]="barChartColors"
+            [options]="chartOptions" [legend]="false" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+            </canvas>
+        </div>
+        <!--<div class="row px-0">
+          <div class="col px-0">
+            <canvas mdbChart [chartType]="barChartType" [datasets]="barChartDatasets" [labels]="barChartLabels" [colors]="barChartColors"
+              [options]="chartOptions" [legend]="false" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+              </canvas>
+          </div>
+        </div>-->
+      </div>
+    </div>
+    <!--</div>-->
+    <!--<div class="row">-->
+    <div class="col-md-6">
+      <div *ngIf="lineAreaChartDataReady" class="card">
+        <div class="text-center py-3">Portfolio wise risk severity</div>
+        <hr class="my-0 mx-3" />
+        <div class="card-body">
+          <canvas mdbChart [chartType]="lineChartType" [datasets]="lineChartDatasets" [labels]="lineChartLabels" [colors]="lineChartColors"
+            [options]="chartOptions" [legend]="true" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+            </canvas>
+        </div>
+        <!--<div class="row px-0">
+          <div class="col px-0">
+            <canvas mdbChart [chartType]="lineChartType" [datasets]="lineChartDatasets" [labels]="lineChartLabels" [colors]="lineChartColors"
+              [options]="chartOptions" [legend]="true" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+              </canvas>
+          </div>
+        </div>-->
+      </div>
+    </div>
+  </div>
+</div>

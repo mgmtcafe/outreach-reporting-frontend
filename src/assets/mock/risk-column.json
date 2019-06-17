@@ -1,0 +1,146 @@
+[
+    {
+        "columnName": "id",
+        "displayName": "Id",
+        "position": 1,
+        "selected": false
+    },
+    {
+        "columnName": "riskDescription",
+        "displayName": "Risk Description",
+        "position": 4,
+        "selected": true
+    },
+    {
+        "columnName": "riskNumber",
+        "displayName": "Number",
+        "position": 2,
+        "selected": true
+    },
+    {
+        "columnName": "riskSubNumber",
+        "displayName": "Sub Number",
+        "position": 3,
+        "selected": true
+    },
+    {
+        "columnName": "gdcProjectId",
+        "displayName": "Gdc Project Id",
+        "position": 5,
+        "selected": true
+    },
+    {
+        "columnName": "portfolio",
+        "displayName": "Portfolio",
+        "position": 6,
+        "selected": true
+    },
+    {
+        "columnName": "riskDomain",
+        "displayName": "Domain",
+        "position": 8,
+        "selected": false
+    },
+    {
+        "columnName": "riskCategory",
+        "displayName": "Category",
+        "position": 7,
+        "selected": true
+    },
+    {
+        "columnName": "subDomain",
+        "displayName": "Sub Domain",
+        "position": 9,
+        "selected": false
+    },
+    {
+        "columnName": "ragStatus",
+        "displayName": "RAG Status",
+        "position": 10,
+        "selected": false
+    },
+    {
+        "columnName": "riskOwner",
+        "displayName": "Owner",
+        "position": 11,
+        "selected": true
+    },
+    {
+        "columnName": "riskOwnerOrg",
+        "displayName": "Owner Org",
+        "position": 12,
+        "selected": false
+    },
+    {
+        "columnName": "riskStatus",
+        "displayName": "Status",
+        "position": 13,
+        "selected": false
+    },
+    {
+        "columnName": "score",
+        "displayName": "Score",
+        "position": 14,
+        "selected": false
+    },
+    {
+        "columnName": "impact",
+        "displayName": "Impact",
+        "position": 15,
+        "selected": false
+    },
+    {
+        "columnName": "severity",
+        "displayName": "Severity",
+        "position": 16,
+        "selected": false
+    },
+    {
+        "columnName": "classification",
+        "displayName": "Classification",
+        "position": 17,
+        "selected": false
+    },
+    {
+        "columnName": "reportedOn",
+        "displayName": "Reported On",
+        "position": 18,
+        "selected": false
+    },
+    {
+        "columnName": "currentUpdate",
+        "displayName": "Current Update",
+        "position": 19,
+        "selected": false
+    },
+    {
+        "columnName": "tarReference",
+        "displayName": "TAR Reference",
+        "position": 21,
+        "selected": false
+    },
+    {
+        "columnName": "targetCloseDate",
+        "displayName": "Target Closure Date",
+        "position": 22,
+        "selected": false
+    },
+    {
+        "columnName": "impactDescription",
+        "displayName": "Impact Description",
+        "position": 20,
+        "selected": false
+    },
+    {
+        "columnName": "mitigationPlan",
+        "displayName": "Mitigation Plan",
+        "position": 23,
+        "selected": false
+    },
+    {
+        "columnName": "probability",
+        "displayName": "Probability",
+        "position": 24,
+        "selected": false
+    }
+]

@@ -1,0 +1,21 @@
+<div class="container-fluid animated fadeIn">
+  <div class="card rounded-0">
+    <!--<mdb-card-header class="py-2">
+      <div class="btn-group btn-group-sm py-0 m-1" role="group">
+        <button mdbBtn type="button" color="blue-grey" size="sm" class="waves-light mx-1" mdbWavesEffect (click)="loadComponent(1)">Dashboard</button>
+        <button mdbBtn type="button" color="blue-grey" size="sm" class="waves-light mx-1" mdbWavesEffect (click)="loadComponent(2)">Charts</button>
+      </div>
+      <button mdbBtn type="button" color="info" size="sm" class="waves-light float-right" mdbWavesEffect [routerLink]="['new']">
+        add new risk
+      </button>
+    </mdb-card-header>-->
+    <mdb-card-body class="p-0">
+      <ng-container *ngIf="componentId==1">
+        <app-risk-dashboard></app-risk-dashboard>
+      </ng-container>
+      <ng-container *ngIf="componentId==2">
+        <app-risk-charts></app-risk-charts>
+      </ng-container>
+    </mdb-card-body>
+  </div>
+</div>

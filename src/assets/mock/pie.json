@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Channels",
+    "value": 6,
+    "color": "#F7464A"
+  },
+  {
+    "name": "CTO",
+    "value": 1,
+    "color": "#46BFBD"
+  },
+  {
+    "name": "Corp & Int'l Tech",
+    "value": 3,
+    "color": "#FDB45C"
+  },
+  {
+    "name": "Operations Technology",
+    "value": 5,
+    "color": "#ee41f4"
+  },
+  {
+    "name": "All",
+    "value": 19,
+    "color": "#949FB1"
+  }
+]

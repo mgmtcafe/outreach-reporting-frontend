@@ -1,0 +1,361 @@
+{
+    "responseCode": "200",
+    "responseMessage": "OK",
+    "response": {
+        "eventModels": [
+            {
+                "status": 1,
+                "createdDate": null,
+                "createdBy": null,
+                "modifiedDate": null,
+                "modifiedBy": null,
+                "eventMasterId": 1,
+                "eventId": "EVENT001",
+                "baseLocation": "Kolkata",
+                "beneficiaryName": "AOne",
+                "businessUnit": "BU1",
+                "venueAddress": "Kolkata",
+                "councilName": "TC",
+                "project": "Outreach",
+                "category": "C1",
+                "eventName": "Event One",
+                "eventDescription": "Event Desc 1",
+                "eventDate": 1560277800000,
+                "eventStatus": "Approved",
+                "activityType": "1",
+                "eventVsVolunteerModels": [
+                    {
+                        "status": null,
+                        "createdDate": null,
+                        "createdBy": null,
+                        "modifiedDate": null,
+                        "modifiedBy": null,
+                        "eventVsVolunteerId": 1,
+                        "associateDetailsModel": {
+                            "status": null,
+                            "createdDate": null,
+                            "createdBy": null,
+                            "modifiedDate": null,
+                            "modifiedBy": null,
+                            "userId": 1,
+                            "associateId": "653738",
+                            "associateName": "AOne",
+                            "associateContact": "1234512345",
+                            "businessUnit": "BU1",
+                            "location": "Kokata",
+                            "designation": "A",
+                            "associateVsRoleModels": [
+                                {
+                                    "status": null,
+                                    "createdDate": null,
+                                    "createdBy": null,
+                                    "modifiedDate": null,
+                                    "modifiedBy": null,
+                                    "associateVsRoleId": 1,
+                                    "associateDetailsModel": null,
+                                    "roleModel": {
+                                        "status": null,
+                                        "createdDate": null,
+                                        "createdBy": null,
+                                        "modifiedDate": null,
+                                        "modifiedBy": null,
+                                        "roleId": 1,
+                                        "roleName": "ADMIN"
+                                    }
+                                }
+                            ],
+                            "eventVsVolunteerModels": null,
+                            "eventVsPocModels": null
+                        },
+                        "eventModel": null,
+                        "volunteerHours": "8",
+                        "travelHours": "2",
+                        "livesImpacted": "4"
+                    },
+                    {
+                        "status": null,
+                        "createdDate": null,
+                        "createdBy": null,
+                        "modifiedDate": null,
+                        "modifiedBy": null,
+                        "eventVsVolunteerId": 2,
+                        "associateDetailsModel": {
+                            "status": null,
+                            "createdDate": null,
+                            "createdBy": null,
+                            "modifiedDate": null,
+                            "modifiedBy": null,
+                            "userId": 2,
+                            "associateId": "653739",
+                            "associateName": "ATwo",
+                            "associateContact": "1234512346",
+                            "businessUnit": "BU1",
+                            "location": "Kokata",
+                            "designation": "SA",
+                            "associateVsRoleModels": [
+                                {
+                                    "status": null,
+                                    "createdDate": null,
+                                    "createdBy": null,
+                                    "modifiedDate": null,
+                                    "modifiedBy": null,
+                                    "associateVsRoleId": 2,
+                                    "associateDetailsModel": null,
+                                    "roleModel": {
+                                        "status": null,
+                                        "createdDate": null,
+                                        "createdBy": null,
+                                        "modifiedDate": null,
+                                        "modifiedBy": null,
+                                        "roleId": 4,
+                                        "roleName": "POC"
+                                    }
+                                }
+                            ],
+                            "eventVsVolunteerModels": null,
+                            "eventVsPocModels": null
+                        },
+                        "eventModel": null,
+                        "volunteerHours": "8",
+                        "travelHours": "2",
+                        "livesImpacted": "8"
+                    }
+                ],
+                "eventVsPocModels": [
+                    {
+                        "status": null,
+                        "createdDate": null,
+                        "createdBy": null,
+                        "modifiedDate": null,
+                        "modifiedBy": null,
+                        "eventVsPocId": 1,
+                        "associateDetailsModel": {
+                            "status": null,
+                            "createdDate": null,
+                            "createdBy": null,
+                            "modifiedDate": null,
+                            "modifiedBy": null,
+                            "userId": 1,
+                            "associateId": "653738",
+                            "associateName": "AOne",
+                            "associateContact": "1234512345",
+                            "businessUnit": "BU1",
+                            "location": "Kokata",
+                            "designation": "A",
+                            "associateVsRoleModels": [
+                                {
+                                    "status": null,
+                                    "createdDate": null,
+                                    "createdBy": null,
+                                    "modifiedDate": null,
+                                    "modifiedBy": null,
+                                    "associateVsRoleId": 1,
+                                    "associateDetailsModel": null,
+                                    "roleModel": {
+                                        "status": null,
+                                        "createdDate": null,
+                                        "createdBy": null,
+                                        "modifiedDate": null,
+                                        "modifiedBy": null,
+                                        "roleId": 1,
+                                        "roleName": "ADMIN"
+                                    }
+                                }
+                            ],
+                            "eventVsVolunteerModels": null,
+                            "eventVsPocModels": null
+                        },
+                        "eventModel": null
+                    }
+                ],
+                "iiepcategory": "1"
+            },
+            {
+                "status": 1,
+                "createdDate": null,
+                "createdBy": null,
+                "modifiedDate": null,
+                "modifiedBy": null,
+                "eventMasterId": 2,
+                "eventId": "EVENT002",
+                "baseLocation": "Kolkata",
+                "beneficiaryName": "AOne",
+                "businessUnit": "BU1",
+                "venueAddress": "Bangalore",
+                "councilName": "TC2",
+                "project": "Outreach",
+                "category": "C2",
+                "eventName": "Event One",
+                "eventDescription": "Event Desc 2",
+                "eventDate": 1560277800000,
+                "eventStatus": "Approved",
+                "activityType": "1",
+                "eventVsVolunteerModels": [
+                    {
+                        "status": null,
+                        "createdDate": null,
+                        "createdBy": null,
+                        "modifiedDate": null,
+                        "modifiedBy": null,
+                        "eventVsVolunteerId": 3,
+                        "associateDetailsModel": {
+                            "status": null,
+                            "createdDate": null,
+                            "createdBy": null,
+                            "modifiedDate": null,
+                            "modifiedBy": null,
+                            "userId": 1,
+                            "associateId": "653738",
+                            "associateName": "AOne",
+                            "associateContact": "1234512345",
+                            "businessUnit": "BU1",
+                            "location": "Kokata",
+                            "designation": "A",
+                            "associateVsRoleModels": [
+                                {
+                                    "status": null,
+                                    "createdDate": null,
+                                    "createdBy": null,
+                                    "modifiedDate": null,
+                                    "modifiedBy": null,
+                                    "associateVsRoleId": 1,
+                                    "associateDetailsModel": null,
+                                    "roleModel": {
+                                        "status": null,
+                                        "createdDate": null,
+                                        "createdBy": null,
+                                        "modifiedDate": null,
+                                        "modifiedBy": null,
+                                        "roleId": 1,
+                                        "roleName": "ADMIN"
+                                    }
+                                }
+                            ],
+                            "eventVsVolunteerModels": null,
+                            "eventVsPocModels": null
+                        },
+                        "eventModel": null,
+                        "volunteerHours": "8",
+                        "travelHours": "2",
+                        "livesImpacted": "15"
+                    },
+                    {
+                        "status": null,
+                        "createdDate": null,
+                        "createdBy": null,
+                        "modifiedDate": null,
+                        "modifiedBy": null,
+                        "eventVsVolunteerId": 4,
+                        "associateDetailsModel": {
+                            "status": null,
+                            "createdDate": null,
+                            "createdBy": null,
+                            "modifiedDate": null,
+                            "modifiedBy": null,
+                            "userId": 2,
+                            "associateId": "653739",
+                            "associateName": "ATwo",
+                            "associateContact": "1234512346",
+                            "businessUnit": "BU1",
+                            "location": "Kokata",
+                            "designation": "SA",
+                            "associateVsRoleModels": [
+                                {
+                                    "status": null,
+                                    "createdDate": null,
+                                    "createdBy": null,
+                                    "modifiedDate": null,
+                                    "modifiedBy": null,
+                                    "associateVsRoleId": 2,
+                                    "associateDetailsModel": null,
+                                    "roleModel": {
+                                        "status": null,
+                                        "createdDate": null,
+                                        "createdBy": null,
+                                        "modifiedDate": null,
+                                        "modifiedBy": null,
+                                        "roleId": 4,
+                                        "roleName": "POC"
+                                    }
+                                }
+                            ],
+                            "eventVsVolunteerModels": null,
+                            "eventVsPocModels": null
+                        },
+                        "eventModel": null,
+                        "volunteerHours": "12",
+                        "travelHours": "4",
+                        "livesImpacted": "12"
+                    }
+                ],
+                "eventVsPocModels": [
+                    {
+                        "status": null,
+                        "createdDate": null,
+                        "createdBy": null,
+                        "modifiedDate": null,
+                        "modifiedBy": null,
+                        "eventVsPocId": 2,
+                        "associateDetailsModel": {
+                            "status": null,
+                            "createdDate": null,
+                            "createdBy": null,
+                            "modifiedDate": null,
+                            "modifiedBy": null,
+                            "userId": 2,
+                            "associateId": "653739",
+                            "associateName": "ATwo",
+                            "associateContact": "1234512346",
+                            "businessUnit": "BU1",
+                            "location": "Kokata",
+                            "designation": "SA",
+                            "associateVsRoleModels": [
+                                {
+                                    "status": null,
+                                    "createdDate": null,
+                                    "createdBy": null,
+                                    "modifiedDate": null,
+                                    "modifiedBy": null,
+                                    "associateVsRoleId": 2,
+                                    "associateDetailsModel": null,
+                                    "roleModel": {
+                                        "status": null,
+                                        "createdDate": null,
+                                        "createdBy": null,
+                                        "modifiedDate": null,
+                                        "modifiedBy": null,
+                                        "roleId": 4,
+                                        "roleName": "POC"
+                                    }
+                                }
+                            ],
+                            "eventVsVolunteerModels": null,
+                            "eventVsPocModels": null
+                        },
+                        "eventModel": null
+                    }
+                ],
+                "iiepcategory": "1"
+            }
+        ],
+        "headCount": 2,
+        "uniqueVolunteers": 2,
+        "totalVolunteeringHours": 46,
+        "volunteeringHours": 36,
+        "travellingHours": 10,
+        "coverage": 1,
+        "averageFrequencyPerVolunteer": 0.5,
+        "averageHoursPerVolunteer": 18,
+        "totalNumberOfEvents": 2,
+        "designationWiseHeadCount": {
+            "A": {
+                "headCount": 1,
+                "volunteerCount": 2
+            },
+            "SA": {
+                "headCount": 1,
+                "volunteerCount": 2
+            }
+        }
+    }
+}

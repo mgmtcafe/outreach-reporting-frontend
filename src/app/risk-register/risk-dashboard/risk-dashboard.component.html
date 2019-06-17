@@ -1,0 +1,272 @@
+<div *ngIf="!isError; else error" class="mat-elevation-z8 animated fadeIn">
+    <table *ngIf="isDataReady; else loading" class="table-bordered table-responsive" mat-table [dataSource]="dataSource"
+        matSort>
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>ID</mat-label>
+                    <input matInput [formControl]="idFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+        <ng-container matColumnDef="riskNumber">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>Number</mat-label>
+                    <input matInput [formControl]="riskNumberFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element"> {{element.riskNumber}} </td>
+        </ng-container>
+        <ng-container matColumnDef="riskSubNumber">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>Sub Number</mat-label>
+                    <input matInput [formControl]="riskSubNumberFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element"> {{element.riskSubNumber}} </td>
+        </ng-container>
+        <ng-container matColumnDef="riskDescription">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>Risk Description</mat-label>
+                    <input matInput [formControl]="riskDescriptionFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element">
+                <span matTooltip="{{element.riskDescription}}" matTooltipPosition="before">
+                    {{element.riskDescription}}
+                </span>
+            </td>
+        </ng-container>
+        <ng-container matColumnDef="gdcProjectId">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>Gdc Project Id</mat-label>
+                    <input matInput [formControl]="gdcProjectIdFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element"> {{element.gdcProjectId}} </td>
+        </ng-container>
+        <ng-container matColumnDef="portfolio">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>Portfolio</mat-label>
+                    <input matInput [formControl]="portfolioFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element"> {{element.portfolio}} </td>
+        </ng-container>
+        <ng-container matColumnDef="riskCategory">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>Category</mat-label>
+                    <input matInput [formControl]="riskCategoryFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element"> {{element.riskCategory}} </td>
+        </ng-container>
+        <ng-container matColumnDef="riskDomain">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>Domain</mat-label>
+                    <input matInput [formControl]="riskDomainFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element"> {{element.riskDomain}} </td>
+        </ng-container>
+        <ng-container matColumnDef="subDomain">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>Sub Domain</mat-label>
+                    <input matInput [formControl]="subDomainFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element"> {{element.subDomain}} </td>
+        </ng-container>
+        <ng-container matColumnDef="ragStatus">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>RAG Status</mat-label>
+                    <input matInput [formControl]="ragStatusFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element"> {{element.ragStatus}} </td>
+        </ng-container>
+        <ng-container matColumnDef="riskOwner">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>Owner</mat-label>
+                    <input matInput [formControl]="riskOwnerFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element"> {{element.riskOwner}} </td>
+        </ng-container>
+        <ng-container matColumnDef="riskOwnerOrg">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>Owner Org</mat-label>
+                    <input matInput [formControl]="riskOwnerOrgFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element"> {{element.riskOwnerOrg}} </td>
+        </ng-container>
+        <ng-container matColumnDef="riskStatus">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>Status</mat-label>
+                    <input matInput [formControl]="riskStatusFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element"> {{element.riskStatus}} </td>
+        </ng-container>
+        <ng-container matColumnDef="score">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>Score</mat-label>
+                    <input matInput [formControl]="scoreFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element"> {{element.score}} </td>
+        </ng-container>
+        <ng-container matColumnDef="impact">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>Impact</mat-label>
+                    <input matInput [formControl]="impactFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element"> {{element.impact}} </td>
+        </ng-container>
+        <ng-container matColumnDef="severity">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>Severity</mat-label>
+                    <input matInput [formControl]="severityFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element"> {{element.severity}} </td>
+        </ng-container>
+        <ng-container matColumnDef="classification">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>Classification</mat-label>
+                    <input matInput [formControl]="classificationFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element"> {{element.classification}} </td>
+        </ng-container>
+        <ng-container matColumnDef="reportedOn">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>Reported On</mat-label>
+                    <input matInput [formControl]="reportedOnFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element"> {{element.reportedOn}} </td>
+        </ng-container>
+        <ng-container matColumnDef="currentUpdate">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>Current Update</mat-label>
+                    <input matInput [formControl]="currentUpdateFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element">
+                <span matTooltip="{{element.currentUpdate}}" matTooltipPosition="before">
+                    {{element.currentUpdate}}
+                </span>
+            </td>
+        </ng-container>
+        <ng-container matColumnDef="impactDescription">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>Impact Description</mat-label>
+                    <input matInput [formControl]="impactDescriptionFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element">
+                <span matTooltip="{{element.impactDescription}}" matTooltipPosition="before">
+                    {{element.impactDescription}}
+                </span>
+            </td>
+        </ng-container>
+        <ng-container matColumnDef="tarReference">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>TAR Reference</mat-label>
+                    <input matInput [formControl]="tarReferenceFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element"> {{element.tarReference}} </td>
+        </ng-container>
+        <ng-container matColumnDef="targetCloseDate">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>Target Closure Date</mat-label>
+                    <input matInput [formControl]="targetCloseDateFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element"> {{element.targetCloseDate}} </td>
+        </ng-container>
+        <ng-container matColumnDef="mitigationPlan">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>Mitigation Plan</mat-label>
+                    <input matInput [formControl]="mitigationPlanFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element">
+                <span matTooltip="{{element.mitigationPlan}}" matTooltipPosition="before">
+                    {{element.mitigationPlan}}
+                </span>
+            </td>
+        </ng-container>
+        <ng-container matColumnDef="probability">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                <mat-form-field class="filter" floatLabel="never">
+                    <mat-label>Probability</mat-label>
+                    <input matInput [formControl]="probabilityFilter">
+                </mat-form-field>
+            </th>
+            <td class="text-truncate" mat-cell *matCellDef="let element"> {{element.probability}} </td>
+        </ng-container>
+        <ng-container matColumnDef="edit" stickyEnd>
+            <th mat-header-cell *matHeaderCellDef>
+                <button mdbBtn type="button" color="light" size="sm" class="waves-light float-right px-2 mx-1"
+                    mdbWavesEffect (click)="editTableHeader();">
+                    <i class="fa fa-th-list" aria-hidden="true"></i>
+                </button>
+            </th>
+            <td mat-cell *matCellDef="let element">
+                <button mdbBtn type="button" color="danger" size="sm" class="waves-light float-right px-2 mx-1"
+                    mdbWavesEffect (click)="deleteRisk(element);">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </button>
+                <button mdbBtn type="button" color="default" size="sm" class="waves-light float-right px-2 mx-1"
+                    mdbWavesEffect (click)="editRisk(element);">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                </button>
+            </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="animated slideInUp"></tr>
+    </table>
+    <mat-paginator [pageSize]="10" [pageSizeOptions]="[10, 20, 50]" showFirstLastButtons></mat-paginator>
+</div>
+<ng-template #loading>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</ng-template>
+
+<ng-template #error>
+    <div class="card error-card border-0 shadow-none float-center mx-auto">
+        <mdb-card-body>
+            <div class="alert alert-danger" role="alert">
+                <h4 class="alert-heading">OOPS!</h4>
+                <p class="mb-0">{{errorMessage}}</p>
+            </div>
+        </mdb-card-body>
+    </div>
+</ng-template>
