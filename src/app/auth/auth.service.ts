@@ -3,7 +3,6 @@ import { HttpService } from '../http.service';
 import { HttpHeaders } from '@angular/common/http';
 import { environment, serviceUrl } from 'src/environments/environment';
 import { BehaviorSubject } from 'rxjs';
-import { User } from './user';
 
 @Injectable({
   providedIn: 'root'

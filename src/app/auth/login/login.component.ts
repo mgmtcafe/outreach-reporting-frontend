@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../auth.service';
+import * as jwt from "jwt-decode";
 
 @Component({
   selector: 'app-login',
@@ -31,15 +32,15 @@ export class LoginComponent {
       })
   }
 
-
   validate() {
     this.submitDissabled = true;
     this.authSvc.login(this.loginForm.value).subscribe(
       result => {
         if (result.access_token != null) {
+          let tokenInfo = this.getDecodedAccessToken(result.access_token);
           sessionStorage.setItem("sessionId", result.access_token);
-          sessionStorage.setItem("userName", result.userId);
-          sessionStorage.setItem("role", this.loginForm.value.role);
+          sessionStorage.setItem("userName", tokenInfo.user_name);
+          sessionStorage.setItem("role", tokenInfo.authorities[0]);
           this.authSvc.changeLoggedInStateState(true);
           this.router.navigate(["/dashboard"]);
         } else {
@@ -52,6 +53,15 @@ export class LoginComponent {
         this.submitDissabled = false;
       }
     );
+  }
+
+  getDecodedAccessToken(token: string): any {
+    try {
+      return jwt(token);
+    }
+    catch (Error) {
+      return null;
+    }
   }
 
 }

@@ -10,7 +10,7 @@ export class HttpInterceptorService implements HttpInterceptor {
 
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpSentEvent | HttpHeaderResponse | HttpProgressEvent | HttpResponse<any> | HttpUserEvent<any>> {
     let authReq = request
-    .clone({ withCredentials: true });
+      .clone({ withCredentials: true });
     console.log('request--->>>', authReq);
     return next.handle(authReq).pipe(
       map((event: HttpEvent<any>) => {

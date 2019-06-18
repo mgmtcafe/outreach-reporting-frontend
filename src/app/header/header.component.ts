@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 import { AuthService } from '../auth/auth.service';
-import { User } from '../auth/user';
 
 @Component({
   selector: 'app-header',
@@ -11,8 +10,7 @@ import { User } from '../auth/user';
 export class HeaderComponent {
 
   navbarOpen = false;
-  public isLoggedIn: boolean = false;
-  loggedInUser: User;
+  isLoggedIn: boolean = false;
   name: string;
 
   constructor(private router: Router, private authSvc: AuthService) {
